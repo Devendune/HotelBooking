@@ -25,7 +25,7 @@ public interface BookingRepository extends JpaRepository<Booking,Long>
             AND b.bookingStatus IN ('BOOKED','CHECKED_IN')
            """
     )
-    boolean isRoomAvailable(@Param("roomId") String roomId,
+    boolean isRoomAvailable(@Param("roomId") Long roomId,
                             @Param("checkInDate")LocalDate checkInDate,
                             @Param("checkOutDate") LocalDate checkOutDate);
 
