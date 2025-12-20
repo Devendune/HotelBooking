@@ -92,6 +92,7 @@ public class RoomController
         return ResponseEntity.ok(roomService.getAvailableRooms(checkInDate,checkOutDate,roomType));
     }
 
+
     @GetMapping("/fetchAllRoomTypes")
     public ResponseEntity<List<RoomType>> fetchAllRoomTypes()
     {
@@ -103,5 +104,4 @@ public class RoomController
     {
         return ResponseEntity.ok(roomService.searchRooms());
     }
-
 }
