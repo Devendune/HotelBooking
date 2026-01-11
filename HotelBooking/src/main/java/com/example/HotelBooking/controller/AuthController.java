@@ -20,6 +20,6 @@ public class AuthController
     @PostMapping("/register")
     public ResponseEntity<Response> registerUser(@RequestBody RegistrationRequest registrationRequest)
     {
-
+        return null;
     }
 }
